@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div>我是div</div>
+    <div class="primary">我是 primary div</div>
     <span>我是span</span>
-    <button>问我是按钮</button>
+    <button class="primary">问我是按钮</button>
     随便选个主色
     <VSwatches v-model="colorProxy" />
   </div>
@@ -40,11 +40,19 @@ export default {
         dom = document.createElement('style')
         this.cacheDom = dom
       }
-      dom.innerText = `#app{color: ${defaultColor};}`
+      dom.innerText = `
+        .primary{
+          color: ${defaultColor} !important;
+        }
+        `
       document.head.appendChild(this.cacheDom)
     },
     replaceStyle(color) {
-      this.cacheDom.innerText = `#app{color: ${color};}`
+      this.cacheDom.innerText = `
+        .primary{
+          color: ${color} !important;
+        }
+        `
     },
   },
   mounted() {
@@ -59,7 +67,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   width: 100vw;
   height: 100vh;
   display: flex;
