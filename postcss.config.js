@@ -1,5 +1,5 @@
 module.exports = {
-  plugins:[
-    
+  plugins: [
+    require('./plugins/postcss-style-extract')
   ]
 }

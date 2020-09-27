@@ -1,0 +1,5 @@
+.primary {
+  /* #if no var */
+  color: #2c3e50 !important;
+  /* #end if */
+}

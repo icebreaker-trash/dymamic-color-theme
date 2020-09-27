@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import './styles/index.css'
+
 import VSwatches from 'vue-swatches'
 import 'vue-swatches/dist/vue-swatches.css'
 const defaultColor = `#2c3e50`
@@ -48,7 +50,7 @@ export default {
     },
   },
   mounted() {
-    this.appendStyle()
+    //this.appendStyle()
   },
 }
 </script>
