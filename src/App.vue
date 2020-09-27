@@ -40,19 +40,11 @@ export default {
         dom = document.createElement('style')
         this.cacheDom = dom
       }
-      dom.innerText = `
-        .primary{
-          color: ${defaultColor} !important;
-        }
-        `
+      dom.innerText = `.primary{color: ${defaultColor} !important;}`
       document.head.appendChild(this.cacheDom)
     },
     replaceStyle(color) {
-      this.cacheDom.innerText = `
-        .primary{
-          color: ${color} !important;
-        }
-        `
+      this.cacheDom.innerText = `.primary{color: ${color} !important;}`
     },
   },
   mounted() {
