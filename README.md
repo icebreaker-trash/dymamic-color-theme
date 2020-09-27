@@ -1,24 +1,6 @@
 # dymamic-color-theme
 
-## Project setup
-```
-npm install
-```
+## ie11不支持var
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 思路很多 尝试一种动态style的思路
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
